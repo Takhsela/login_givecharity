@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+<!-- Suite -->
+
+
+-<test name="Test">
+
+
+-<groups>
+
+
+-<run>
+
+<exclude name="smoke"/>
+<include name="sanity"/>
+
+</run>
+
+</groups>
+
+
+-<classes>
+
+<class name="sample.Samp1"/>
+
+<class name="sample.Samp2"/>
+
+<class name="sample.Samp3"/>
+
+<class name="sample.Samp4"/>
+
+<class name="sample.Samp5"/>
+
+<class name="sample.Samp6"/>
+
+</classes>
+
+</test>
+
+<!-- Test -->
+
+
+</suite>
