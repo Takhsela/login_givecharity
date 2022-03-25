@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="login test case">
+	<test name="Testing signin with various Credentials1">
+		<classes>
+			<class name="testCases.TC1"></class>
+		</classes>
+	</test>
+</suite>
