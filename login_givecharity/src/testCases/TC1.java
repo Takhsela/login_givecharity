@@ -1,6 +1,8 @@
 package testCases;
 
 import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.testng.annotations.Test;
 
@@ -9,6 +11,7 @@ import objectRepo.SignInPage;
 
 import utilities.BaseClass;
 import utilities.ReadExcel;
+import utilities.ReadExcel.Correct_credentials;
 import utilities.ReadExcel.RowData;
 public class TC1 extends BaseClass {
 	Workbook wb;
@@ -32,11 +35,29 @@ public class TC1 extends BaseClass {
 		ReadExcel excel = new ReadExcel();
 		excel.initializeSheet();
 		int rowNumber = 1;
+		RowData rowData = excel.getData(rowNumber);
+		String correctEmail = excel.getData().Correct_Email;
+		String correctPass = excel.getData().Correct_Pass;
+		String actual_email=rowData.Email_address;
+		String actual_pass=rowData.password;
 		while (true) {
 			try {
-				RowData rowData = excel.getData(rowNumber);
-				SignInPage.fill_credentials(rowData.Email_address, rowData.password);
+				
+				
+				if(correctEmail.equalsIgnoreCase(actual_email) && correctPass.equalsIgnoreCase(actual_pass)) {
+					
+					SignInPage.fill_credentials(correctEmail, correctPass);
+					SignInPage.submit();
+					break;
+				}
+				
+				else  {
+					
+					SignInPage.fill_credentials(actual_email,actual_pass );
+				
+					}
 				rowNumber++;
+			
 			} catch (Exception e) {
 				break;
 			}

@@ -19,7 +19,10 @@ public static void fill_credentials(String id, String pwd) {
 	enterTxt(email_id, id);
 	enterTxt(pass, pwd);
 	
-	click(submit_button);
 	
+	}
+
+public static void submit() {
+click(submit_button);
 }
 }
