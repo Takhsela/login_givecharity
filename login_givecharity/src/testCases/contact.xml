@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="contact us page details">
+	<test name="all columns filled for contacts">
+		<classes>
+			<class name="testCases.TC3"></class>
+		</classes>
+	</test>
+</suite>

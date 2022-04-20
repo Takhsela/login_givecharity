@@ -8,13 +8,17 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">login test case</th></tr>
-<tr><td><a href="#t0">Testing signin with various Credentials1</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10,874</td><td></td><td></td></tr>
+<tr><th colspan="8">contact us page details</th></tr>
+<tr><td><a href="#t0">all columns filled for contacts</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">22,356</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">login test case</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testing signin with various Credentials1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">testCases.TC1</td><td><a href="#m0">clickonsignin</a></td><td rowspan="1">1649358392950</td><td rowspan="1">189</td></tr><tr class="passedeven"><td><a href="#m1">formFill</a></td><td rowspan="1">1649358393141</td><td rowspan="1">1590</td></tr><tr class="passedeven"><td><a href="#m2">setup</a></td><td rowspan="1">1649358383902</td><td rowspan="1">9043</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">contact us page details</th></tr></tbody><tbody id="t0"><tr><th colspan="4">all columns filled for contacts &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.TC3</td><td><a href="#m0">contactfill</a></td><td rowspan="1">1650427229236</td><td rowspan="1">1282</td></tr><tr><th colspan="4">all columns filled for contacts &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testCases.TC3</td><td><a href="#m1">clickoncontact</a></td><td rowspan="1">1650427229070</td><td rowspan="1">162</td></tr><tr class="passedeven"><td><a href="#m2">setup</a></td><td rowspan="1">1650427208212</td><td rowspan="1">20852</td></tr></tbody>
 </table>
-<h2>Testing signin with various Credentials1</h2><h3 id="m0">testCases.TC1#clickonsignin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.TC1#formFill</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testCases.TC1#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>all columns filled for contacts</h2><h3 id="m0">testCases.TC3#contactfill</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.ss.usermodel.Sheet.getRow(int)&quot; because &quot;this.sh1&quot; is null
+	at utilities.ReadExcel.getData1(ReadExcel.java:98)
+	at testCases.TC3.contactfill(TC3.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.TC3#clickoncontact</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCases.TC3#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

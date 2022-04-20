@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [change password]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="password change test postive senario(failed)">
+    <classes>
+      <class name="testCases.TC2">
+        <methods>
+          <include name="chpass"/>
+        </methods>
+      </class> <!-- testCases.TC2 -->
+    </classes>
+  </test> <!-- password change test postive senario(failed) -->
+</suite> <!-- Failed suite [change password] -->
